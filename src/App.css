@@ -18,7 +18,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
+  @keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }
@@ -40,3 +40,97 @@
 .read-the-docs {
   color: #888;
 }
+/*Botones*/
+button {
+  border: none;
+  padding: 8px 12px;
+  margin-left: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+button.agregar {
+  background-color: #2563eb;
+  color: white;
+}
+
+button.agregar:hover {
+  background-color: #1d4ed8;
+}
+
+button.editar {
+  background-color: #facc15;
+}
+
+button.editar:hover {
+  background-color: #eab308;
+}
+
+button.eliminar {
+  background-color: #ef4444;
+  color: white;
+}
+
+button.eliminar:hover {
+  background-color: #dc2626;
+}
+
+/* ===== INPUTS ===== */
+
+
+  .item-usuario {
+  background: #f9fafb;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);  
+ }
+ .item-usuario:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+ .acciones {
+  display: flex;
+  gap: 8px;
+ }
+
+ .btn-editar {
+  background-color: #facc15;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+ } 
+
+ .btn-eliminar {
+  background-color: #ef4444;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+ } 
+ input:focus {
+  outline: none;
+  border: 2px solid #3b82f6; /* azul bonito */
+  box-shadow: 0 0 5px rgba(59,130,246,0.5);
+}
+ 
+  /* Quita los puntos de la lista */
+  ul {
+  list-style: none;
+  padding: 0;
+  }
+
+  
+
+  
+ 
+
