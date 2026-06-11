@@ -85,11 +85,31 @@ export default function SeccionMensajesDirectos() {
                 }}
               >
                 <div style={{ position: 'relative' }}>
-                  <User size={18} color="#000000" />
+                  <div
+                     style={{
+                    width: 36,
+                    height: 36,
+                    borderRadius: '50%',
+                    backgroundColor: '#2563EB',
+                    color: '#FFFFFF',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 'bold',
+                    fontSize: 14
+                    }}
+>
+  {u.nombre.split(" ")
+  .map(palabra => palabra.charAt(0))
+  .slice(0, 2)
+  .join("")
+  .toUpperCase()}
+</div>
                   <div style={{ width: 8, height: 8, backgroundColor: u.online ? '#10b981' : '#ff0000', borderRadius: '50%', position: 'absolute', bottom: 0, right: 0 }} />
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  <span style={{ fontSize: 13, color: '#000000', fontWeight: 500 }}>{u.nombre}</span>
+                  <span style={{ fontSize: 13, color: '#000000', fontWeight: 500 }}>{u.nombre}</span>               
+                  
                   <small style={{ fontSize: 11, color: '#000000' }}>{u.rol}</small>
                 </div>
               </div>
@@ -101,7 +121,7 @@ export default function SeccionMensajesDirectos() {
       {/* Columna Derecha: Ventana de Chat Dinámico */}
       <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
         {chatActivo ? (
-          <>gir
+          <>
             <div style={{ paddingBottom: 8, borderBottom:'1px solid #D9E2EC'  }}>
               <strong style={{ color: '#000000' }}>{chatActivo.nombre}</strong>
             </div>
