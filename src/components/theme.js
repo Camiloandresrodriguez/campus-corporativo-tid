@@ -9,8 +9,8 @@ export const COLORS = {
   success: '#16a34a',
   warning: '#d97706',
   danger: '#dc2626',
-  textPrimary: '#0f172a',
-  textSecondary: '#334155',
+  textPrimary: '#f8fafc',
+  textSecondary: '#64748b',
   textMuted: '#64748b',
 };
 
